@@ -224,6 +224,23 @@
         }
 
         footer { text-align: center; padding: 40px; color: var(--text-muted); font-size: 0.85rem; border-top: 1px solid var(--glass-border); text-transform: uppercase; letter-spacing: 1px; backdrop-filter: blur(10px); }
+        /* --- AJUSTES FORZADOS PARA CELULARES --- */
+@media (max-width: 768px) {
+    .hero h1 { font-size: 2.2rem !important; }
+    .hero p { font-size: 1rem; padding: 0 10px; }
+    .section-title { font-size: 1.5rem; text-align: center; }
+    
+    /* Apilar tarjetas de partidos */
+    .match-card { flex-direction: column; gap: 15px; }
+    .team { width: 100%; }
+    .score-box { width: 100%; margin: 10px 0; }
+    
+    /* Asegurar que Facebook no desborde la pantalla */
+    .collage-item iframe { width: 100% !important; min-height: 400px; }
+    
+    /* Centrar navegación */
+    nav { justify-content: center; flex-direction: column; }
+}
     </style>
 </head>
 <body>
